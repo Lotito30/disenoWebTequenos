@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- GOOGLE AUTH -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="1031554094428-i6vq0d4b0qammumkb9037huluja93pir.apps.googleusercontent.com">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Inicio Sesion - Peñitequeños</title>
+</head>
+<body class="bg-light">
+    <!-- FACEBOOK AUTH -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0&appId=248213274361969&autoLogAppEvents=1" nonce="d8119GxG"></script>
+
+    <!-- INICIAR SESION -->
+  <section class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+            <form>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Introduce tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" class="form-control" id="clave" name="clave" placeholder="Introduce tu contraseña">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+            </form>
+            <hr>
+            <p class="text-center">o inicia sesión con:</p>
+            <div class="row justify-content-center ">
+                <div class="m-2">
+                    <button class="btn btn-primary btn-block" >Continuar con Facebook</button>
+                </div>
+                <div class="m-2">
+                    <button class="btn btn-success btn-block" data-onsuccess="onSignIn">Continuar con Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- BOTONES DE INICIO DE SESIONDE FACEBOOK Y GOOGLE
+<div class="container d-flex flex-column align-items-center">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<fb:login-button 
+scope="public_profile,email"
+onlogin="checkLoginState();">
+</fb:login-button>
+</div> -->
+</body>
+</html>

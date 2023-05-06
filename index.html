@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      />
+    <!-- Enlace a la biblioteca de Bootstrap mediante una CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-HHcJLlk9L9f+qV7a1fiPrN8RUwJSDLAujZsgV+ZbRtje1V7lXzJq3CfqiIeO8ZZw"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a42b43434c.js"
+      crossorigin="anonymous"
+    >
+    </script>
+    <!-- BOOTSTRAP SCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+      integrity="sha256-cAnmHNGzGYh3qfxBxQmLH50zztUGcvmws8t94f0EzJY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <title>Inicio - Peñitequeños</title>
+  </head>
+  <body onload="init()">
+    
+    <!-- CARRITO
+      <a href="./page/carrito.html" class="btn btn-primary m-3 p-2 ml-auto" data-bs-toggle="modal" data-bs-target="#carritoCompra">
+                <i class="bi bi-cart"></i> Carrito <span class="badge bg-secondary">0</span></a> -->
+
+      <!-- HEADER -->
+    <div class="jumbotron cuerpo mb-0">
+      <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./image/Negro Círculo con Cubiertos Restaurante Logo (3).png"
+                alt="Logo"
+                width="150"
+                class="bg-white border-success rounded-circle logo"
+              />
+            </a>
+            
+
+            <button
+              class="navbar-toggler bg-light"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-light" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./page/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./page/promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./page/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./page/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../page/inicioSesion.html">
+                    <button type="button" class="btn btn-primary">
+                      Iniciar Sesión
+                    </button>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+        <div
+          class="container d-flex flex-column align-items-center justify-content-center text-center mt-5 texto-principal"
+        >
+          <h1 class="h1Peñitequeños">PEÑITEQUEÑOS</h1>
+          <h4 class="h4Peñitequeños">
+            ¡Los <strong>Mejores</strong> de la Ciudad!
+          </h4>
+          <a href="./page/productos.html" class="btn btn-primary m-3">
+            <i class="bi bi-cart"></i> Ver más
+          </a>
+        </div>
+        <div class="horario-atencion ml-2 text-uppercase">
+          <p>Horario de Atención:</p>
+          <p>Lunes a Domingo de 11:00 AM a 12:00 PM</p>
+        </div>
+        
+    </div> 
+    <!-- CARRUSEL BANNER -->
+    <div class="mb-0">
+    <div id="myCarousel" class="carousel slide mb-3 mt-3" data-ride="carousel" data-interval="4000">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators activado ">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>            
+          <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+      </ol>
+  
+      <!-- Banner -->
+      <div class="carousel-inner bg-light">
+          <div class="carousel-item active ">
+              <img src="./image/banner1.jfif" alt="Banner 1" class="d-block w-100">
+          </div>            
+          <div class="carousel-item">                
+            <img src="./image/banner2.jfif" alt="Banner 2" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="./image/banner3.jfif" alt="Banner 3" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="./image/banner4.jfif" alt="Banner 4" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="./image/banner5.jfif" alt="Banner 5" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="./image/banner6.jfif" alt="Banner 6" class="d-block w-100">
+          </div>        
+        </div>
+  
+      <!-- Controles de Navegación -->
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+      </a>        
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+      </a>
+  </div>
+</div>
+
+<!-- MUESTRA DE TEQUEÑOS -->
+  <div class="alert alert-warning text-center mb-0" role="alert">
+    
+    <h4 class="alert-heading">¡Disfruta del sabor único de nuestros tequeños!</h4>
+    <section class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mt-4">
+        <div class="col mb-2">
+          <div class="card h-auto">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Tequeños de quesos</h5>
+          </div>
+            <img src="./image/tequeñosPromocion2.jfif" class="card-img-top" alt="Imagen 1">
+          </div>
+        </div>
+        <div class="col mb-2">
+          <div class="card h-auto">
+          
+            <div class="card-body">
+              <h5 class="card-title font-italic">Tequeños de chocolate</h5>
+            </div>
+            <img src="./image/tequeñosPromocion2.jfif" class="card-img-top" alt="Imagen 2">
+          </div>
+        </div>
+        <div class="col mb-2">
+          <div class="card h-auto">
+            <div class="card-body">
+              <h5 class="card-title font-italic">Tequeños de jamón y queso</h5>
+            </div>
+            <img src="./image/tequeñosPromocion2.jfif" class="card-img-top" alt="Imagen 3">
+          </div>
+        </div>
+        <div class="col mb-2">
+          <div class="card h-auto">
+            <div class="card-body">
+              <h5 class="card-title font-italic">Tequeños de Chorizo y Queso</h5>
+            </div>
+            <img src="./image/tequeñosPromocion2.jfif" class="card-img-top" alt="Imagen 4">
+          </div>
+        </div>
+      </div>
+    </section>
+    <p class="font-weight-normal mt-3">Ven a probar nuestros deliciosos tequeños recién hechos, elaborados con los mejores ingredientes y con la receta tradicional que nos ha dado fama en toda la ciudad. Ya sea que quieras un bocado rápido o una cena completa, nuestros tequeños satisfarán tu paladar y te dejarán con ganas de más. ¡No esperes más y pruebalos hoy mismo!</p>
+  </div>
+
+  <!--  -->
+  <!-- CARRUSEL RESEÑAS Y/O TESTIMONIOS -->
+
+  <div id="testimonials" class="carousel slide mb-3 mt-3" data-ride="carousel">
+    <ol class="carousel-indicators testimonio">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active bg"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>            
+      <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+  </ol>
+  <!-- RESEÑAS -->
+    <div class="carousel-inner bg-dark text-light text-uppercase font-italic font-weight-bolder d-flex testimonios justify-content-start text-center align-items-center ">
+      <div class="carousel-item active">
+        <div class="testimonial">
+          <p class="quote">"Los tequeños de Peñitequeños son los mejores que he probado. Siempre son frescos y tienen un sabor increíble."</p>
+          <p class="customer">- Juan Pérez</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial">
+          <p class="quote">"Me encantan los tequeños de Peñitequeños. Son perfectos para compartir con amigos y familiares. ¡Siempre son un éxito en las reuniones!"</p>
+          <p class="customer">- María Rodríguez</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial">
+          <p class="quote">"Desde que descubrí Peñitequeños, no puedo dejar de comer sus tequeños. Son adictivos y siempre están llenos de sabor."</p>
+          <p class="customer">- Carlos Gómez</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial">
+          <p class="quote">"Los tequeños de Peñitequeños son simplemente deliciosos. Los pedí para una reunión familiar y todos quedaron encantados."</p>
+          <p class="customer">- Laura M.</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="testimonial">
+          <p class="quote">"Desde que probé los tequeños de Peñitequeños, no puedo parar de comerlos. Son el snack perfecto para cualquier ocasión."</p>
+          <p class="customer">- Juan P.</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="testimonial">
+          <p class="quote">"Los tequeños de Peñitequeños son una verdadera delicia. Son el acompañamiento perfecto para cualquier bebida y una excelente opción para compartir con amigos."</p>
+          <p class="customer">- Sofía G.</p>
+        </div>
+      </div>
+      
+    </div>
+    <!-- BOTONES -->
+    <a class="carousel-control-prev" href="#testimonials" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+    <a class="carousel-control-next" href="#testimonials" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+  </div>
+  <!-- GOOGLE MAPS -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="embed-responsive embed-responsive-16by9 mb-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.1326116250616!2d-58.4093361234426!3d-34.62608895868135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb02c65a4cc5%3A0x77c8151c3502e9b0!2sLa%20Rioja%201310%2C%20C1244ABD%20CABA!5e0!3m2!1ses!2sar!4v1683068138859!5m2!1ses!2sar" width="200px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- FOOTER -->
+    <footer class="text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="mb-3">Síguenos en redes sociales</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-light">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light">
+                  <i class="fab fa-youtube fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Enlaces útiles</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Política de privacidad</a></li>
+              <li><a href="#" class="text-light">Términos y condiciones</a></li>
+              <li><a href="#" class="text-light">Aviso legal</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Contáctanos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Dirección: La Rioja 1310,
+                San Cristobal, CABA
+              </li>
+              <li><i class="fas fa-phone"></i> Teléfono: (54) 1234567890</li>
+              <li>
+                <i class="fas fa-envelope"></i> Email: peñitequeños@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Biblioteca JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js\" integrity="sha384-HHcJLlk9L9f+qV7a1fiPrN8RUwJSDLAujZsgV+ZbRtje1V7lXzJq3CfqiIeO8ZZw" crossorigin="anonymous"></script>
+  <script src="./js/funcion.js"></script>
+  </body>
+</html>
+
+
+

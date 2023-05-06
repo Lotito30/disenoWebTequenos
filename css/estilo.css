@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+  min-width: 420px;
+  background-color: lightgrey !important;
+}
+.cuerpo{
+  background-color: black;
+  /* background-image: url('../image/fotoPrincipal.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  height: 100vh;
+  
+}
+.texto-principal{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color:black !important;
+}
+.h1Peñitequeños{
+  font-size: 6rem;
+}
+.h4Peñitequeños{
+  font-size: 2.5rem;
+}
+.horario-atencion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 16px;
+}
+
+/* NAVBAR */
+  .navbarnosotros{
+    background-color:black !important;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color:white !important;
+    text-align: right;
+  }
+  .nav-link:hover{
+    font-size: 1.3rem;
+  }
+/* FINNAVBAR */
+
+/*  CARRUSEL  */
+#myCarousel .activado li,
+#testimonials .testimonio li{
+  border-radius: 50%;
+  width: 0.7em;
+  height: 0.7em;
+  margin: 0.7em;
+  background-color: black;
+}
+
+#myCarousel .activado li.active,
+#testimonials .testimonio li.active{
+  background-color: white !important;
+}
+.carousel-inner img{
+ height:20vw;
+} 
+.testimonios{
+  width:100%;
+  height:40vh;
+  padding:0 2vh;
+}
+/* INICIAR SESION */
+.fb-login-button{
+  height:50px;
+}
+/* FOOTER */
+footer{
+  background-color: #007bff;
+}
+
+/* MEDIA */
+
+@media (min-width:768px) and (max-width:1024px){
+  .h1Peñitequeños{
+    font-size: 4rem;
+  }
+  .h4Peñitequeños{
+    font-size: 2rem;
+  }
+  .logo{
+    height:140px;
+  }
+  .carousel-inner img{
+    height:40vw;
+  } 
+}
+
+@media (max-width:767px){
+  .h1Peñitequeños{
+    font-size: 3rem;
+  }
+  .h4Peñitequeños{
+    font-size: 1.5rem;
+  }
+  .logo{
+    width:130px;
+  }
+  .carousel-inner img{
+    height:50vw;
+  } 
+  #myCarousel .activado li,
+  #testimonials .testimonio li{
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.5em;
+
+}
+
+  
+
+}
+
